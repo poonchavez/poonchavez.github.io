@@ -1,4 +1,5 @@
 en:
-  locale: en-GB
-  label: English
+  params:
+    locale: en-GB
+    label: English
   weight: 1
