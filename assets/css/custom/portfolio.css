@@ -22,23 +22,6 @@ body {
   background: transparent;
 }
 
-/* Keep the site navigation controls at the top of the viewport. */
-#dock {
-  top: calc(env(safe-area-inset-top) + 1rem) !important;
-  right: auto !important;
-  bottom: auto !important;
-  left: 50% !important;
-  transform: translateX(-50%) !important;
-}
-
-.nav-popover {
-  top: calc(env(safe-area-inset-top) + 5rem) !important;
-  right: auto !important;
-  bottom: auto !important;
-  left: 50% !important;
-  transform: translateX(-50%) !important;
-}
-
 body::before {
   position: fixed;
   z-index: 0;
