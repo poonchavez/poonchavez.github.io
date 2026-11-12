@@ -42,4 +42,4 @@ lightbox:
   enabled: true
 readingProgress:
   enabled: true
-  showOnHomepage: false
+  showOnHomepage: true

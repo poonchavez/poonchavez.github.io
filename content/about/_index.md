@@ -1,7 +1,7 @@
 ---
 title: About me
 layout: about
-summary: A little about Chavez Poon and his approach to website design and development.
+summary: A little about me and my approach to website design and development.
 ---
 
 I’m an amateur website designer and developer based in the United Kingdom, with over five years of experience building websites. I enjoy taking an idea from an early sketch to a finished, responsive site, and I’m always looking for ways to improve my design and development skills.
