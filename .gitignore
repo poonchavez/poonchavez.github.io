@@ -1,0 +1,7 @@
+# Hugo
+/public/
+/resources/_gen/
+.hugo_build.lock
+
+# Node tooling used by Hugo Narrow theme development
+/node_modules/

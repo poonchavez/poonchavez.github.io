@@ -1,0 +1,41 @@
+baseURL: "https://poonchavez.github.io/"
+locale: en-GB
+defaultContentLanguage: en
+defaultContentLanguageInSubdir: false
+title: "Chavez Poon — Web Designer & Developer"
+
+hasCJKLanguage: true
+enableEmoji: true
+mainSections: ["posts", "projects", "pages"]
+permalinks:
+  posts: /writing/:slug/
+  projects: /projects/:slug/
+  pages: /:slug/
+pagination:
+  pagerSize: 8
+  path: page
+taxonomies:
+  category: categories
+  tag: tags
+  series: series
+markup:
+  tableOfContents:
+    startLevel: 2
+    endLevel: 4
+    ordered: false
+  goldmark:
+    renderer:
+      unsafe: true
+outputs:
+  home: ["HTML", "RSS", "JSON", "WebAppManifest"]
+outputFormats:
+  WebAppManifest:
+    mediaType: "application/manifest+json"
+    baseName: site
+    isPlainText: true
+module:
+  hugoVersion:
+    extended: true
+    min: 0.165.0
+  imports:
+    - path: github.com/tom2almighty/hugo-narrow/v2
