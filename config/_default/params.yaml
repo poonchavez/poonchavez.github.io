@@ -10,12 +10,15 @@ social:
   - url: "https://github.com/poonchavez"
     icon: github
     icon_pack: fab
+    html_attributes: 'target="_blank" rel="noopener noreferrer"'
   - url: "https://www.chavezpoon.com"
     icon: globe
     icon_pack: fas
+    html_attributes: 'target="_blank" rel="noopener noreferrer"'
   - url: "mailto:poonlhchavez@gmail.com"
     icon: paper-plane
     icon_pack: fas
+    html_attributes: 'target="_blank" rel="noopener noreferrer"'
 home:
   introHeight: fullheight
   showLatest: true
