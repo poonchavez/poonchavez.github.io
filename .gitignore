@@ -3,5 +3,6 @@
 /resources/_gen/
 .hugo_build.lock
 
-# Node tooling used by Hugo Narrow theme development
+# Node tooling used by the Introduction theme
 /node_modules/
+/themes/introduction/node_modules/

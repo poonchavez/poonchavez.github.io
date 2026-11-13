@@ -1,51 +1,26 @@
 description: "Chavez Poon is an amateur website designer and developer with over five years of experience building websites."
-keywords: ["Chavez Poon", "web design", "web development", "portfolio"]
-defaultAuthor: "Chavez Poon"
-language: en
-shortName: Chavez Poon
-favicon:
-  svg: /favicon.svg
-author:
-  name: Chavez Poon
-  title: Amateur Website Designer & Developer
-  description: "I design and build clear, responsive websites. Over five years of hands-on website development, and always learning."
-  avatar: /images/profile-pic.jpg
-  social:
-    - name: Email
-      url: mailto:poonlhchavez@gmail.com
-      icon: email
-    - name: Personal Website
-      url: https://www.chavezpoon.com
-      icon: personal-website
-    - name: GitHub
-      url: https://github.com/poonchavez
-      icon: github
-contentWidth: 56rem
-toc:
-  enabled: true
-colorScheme: nord
+themeStyle: auto
+favicon: /favicon.svg
+showMenu: true
+showRSSButton: true
+fadeIn: true
+dateFormat: "Jan 2, 2006"
+email: poonlhchavez@gmail.com
+social:
+  - url: "https://github.com/poonchavez"
+    icon: github
+    icon_pack: fab
+  - url: "https://www.chavezpoon.com"
+    icon: globe
+    icon_pack: fas
+  - url: "mailto:poonlhchavez@gmail.com"
+    icon: paper-plane
+    icon_pack: fas
 home:
-  recentPostsCount: 3
-  contentOrder:
-    - author-section
-    - featured-projects.html
-    - page-content
-post:
-  showRelated: true
-  relatedPostsCount: 2
-  license: ""
-comments:
-  enabled: false
-analytics:
-  provider: ""
-katex:
-  enabled: false
-mermaid:
-  enabled: false
-gallery:
-  enabled: true
-lightbox:
-  enabled: true
-readingProgress:
-  enabled: true
-  showOnHomepage: true
+  introHeight: fullheight
+  showLatest: true
+  showAllPosts: false
+  numberOfProjectsToShow: 3
+  localTime: false
+projects:
+  useTwoColumns: false

@@ -1,14 +1,14 @@
 # Chavez Poon — Portfolio
 
-A Markdown-powered portfolio built with Hugo Extended and the Hugo Narrow theme.
+A Markdown-powered portfolio built with Hugo Extended and the Introduction theme.
 
 ## Run locally
 
-Requirements: Hugo Extended 0.165.0 or newer and Go (for Hugo Modules).
+Requirements: Hugo Extended 0.165.0 or newer, Node.js 22.12 or newer, and npm.
 
 ```sh
-hugo mod get
-hugo server --buildDrafts
+cd themes/introduction && npm ci --ignore-scripts && cd ../..
+PATH="$PWD/themes/introduction/node_modules/.bin:$PATH" hugo server --buildDrafts
 ```
 
 Open http://localhost:1313.
@@ -16,16 +16,16 @@ Open http://localhost:1313.
 ## Build
 
 ```sh
-hugo --minify
+PATH="$PWD/themes/introduction/node_modules/.bin:$PATH" hugo --minify
 ```
 
 Hugo writes the static site to `public/`.
 
 ## Content
 
-- `content/_index.md` — homepage introduction
-- `content/pages/` — standalone pages
+- `content/home/` — homepage introduction and sections
+- `content/about/` — about page
 - `content/projects/` — portfolio projects
-- `content/posts/` — writing
+- `content/blog/` — writing
 
-Hugo Narrow is pinned in `go.mod`; its upstream project is archived. The theme is distributed under AGPL-3.0. Review the theme license when publishing or redistributing this site.
+Introduction is included as a Git submodule from [victoriadrake/hugo-theme-introduction](https://github.com/victoriadrake/hugo-theme-introduction) and is licensed under Apache-2.0.

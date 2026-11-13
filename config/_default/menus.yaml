@@ -1,33 +1,10 @@
 main:
   - name: Projects
-    pageRef: /projects
+    url: /#projects
     weight: 10
-    params:
-      icon: projects
   - name: Writing
-    pageRef: /posts
+    url: /writing/
     weight: 20
-    params:
-      icon: posts
   - name: About
-    pageRef: /about
+    url: /#about
     weight: 30
-    params:
-      icon: about
-footer:
-  - name: About
-    pageRef: /about
-    weight: 10
-    params:
-      icon: about
-  - name: RSS
-    url: /index.xml
-    weight: 20
-    params:
-      icon: rss
-social:
-  - name: Email
-    url: mailto:poonlhchavez@gmail.com
-    weight: 10
-    params:
-      icon: email
