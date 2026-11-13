@@ -30,7 +30,6 @@ home:
     - author-section
     - featured-projects.html
     - page-content
-    - recent-posts
 post:
   showRelated: true
   relatedPostsCount: 2
