@@ -4,4 +4,4 @@ description: "An amateur website designer and developer with over five years of 
 headless: true
 ---
 
-I'm a website designer and developer based in the United Kingdom. I build clear, responsive websites and keep learning by making them.
+I'm a freelance and amateur website designer and developer based in the United Kingdom. I build clear, responsive websites and keep learning by making them.

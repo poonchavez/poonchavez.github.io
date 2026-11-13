@@ -1,5 +1,5 @@
 ---
-title: 荒野中的呼喊者 | clamansindeserto.pages.dev
+title: 荒野中的呼喊者
 slug: clamans-in-deserto
 date: 2026-11-13
 description: A Chinese-language website for faith-centered writing and reflection. Built as a static site with Hugo and the Blowfish theme, then deployed on Cloudflare Pages.

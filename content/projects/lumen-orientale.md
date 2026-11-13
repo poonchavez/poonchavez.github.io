@@ -1,5 +1,5 @@
 ---
-title: Lumen Orientale | lumenorientale.pages.dev
+title: Lumen Orientale
 slug: lumen-orientale
 date: 2026-11-13
 description: An editorial website devoted to the Christian East and its spiritual heritage. Built as a static site with Hugo and the Blowfish theme, then deployed on Cloudflare Pages.
