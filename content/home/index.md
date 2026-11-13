@@ -4,4 +4,4 @@ description: "An amateur website designer and developer with over five years of 
 headless: true
 ---
 
-Freelance Website Designer and Developer based in Norfolk, United Kingdom.
+Freelance Website Designer and Developer based in United Kingdom.
