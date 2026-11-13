@@ -1,5 +1,5 @@
 ---
-title: Chavez Poon
+title: Chavez Poon | chavezpoon.com
 slug: chavezpoon
 date: 2026-11-13
 description: A personal website bringing together my writing, Catholic media work, biography, and selected projects.
