@@ -1,4 +1,7 @@
 main:
+  - name: Home
+    url: https://poonchavez.github.io/
+    weight: 0
   - name: Projects
     url: /#projects
     weight: 10
