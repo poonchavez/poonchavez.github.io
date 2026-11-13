@@ -1,7 +1,7 @@
 ---
-title: "Hi, I'm Chavez"
+title: "Chavez L. H. Poon"
 description: "An amateur website designer and developer with over five years of experience building websites."
 headless: true
 ---
 
-I'm a freelance and amateur website designer and developer based in the United Kingdom. I build clear, responsive websites and keep learning by making them.
+Freelance Website Designer and Developer based in Norfolk, United Kingdom.
