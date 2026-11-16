@@ -5,6 +5,9 @@ main:
   - name: About
     url: /#about
     weight: 20
+  - name: Services
+    url: /#services
+    weight: 25
   - name: Writing
     url: /blog/
     weight: 30
