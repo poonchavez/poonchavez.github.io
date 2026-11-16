@@ -4,14 +4,6 @@ image: "/images/profile-pic.jpg"
 weight: 5
 ---
 
-I enjoy taking ideas from an early sketch to a working site. I specially care about thoughtful layouts, accessible experiences, and the details that make websites clear and useful.
-
-### What I do in a nutshell...
-
-* **Website Design and Development**
-
-* **E-Commerce service for Small Business**
-
-* **Consultancy and Support**
+My name is Chavez Poon and I am a United Kingdom based freelance website designer and developer. I am passionate about sculpting stunning and beautiful websites, and crafting fun experiences in the internet.
 
 [Learn more about me](/about/)

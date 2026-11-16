@@ -8,7 +8,7 @@ theme: introduction
 hasCJKLanguage: true
 enableEmoji: true
 permalinks:
-  blog: /writing/:slug/
+  blog: /blog/:slug/
 taxonomies:
   tag: tags
   series: series

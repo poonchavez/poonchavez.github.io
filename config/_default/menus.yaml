@@ -6,7 +6,7 @@ main:
     url: /#about
     weight: 20
   - name: Writing
-    url: /writing/
+    url: /blog/
     weight: 30
   - name: Projects
     url: /#projects
