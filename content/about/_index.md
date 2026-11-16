@@ -4,14 +4,14 @@ layout: about
 summary: A little about me and my approach to website design and development.
 ---
 
-![](/images/profile-pic.jpg)
+![Chavez](/images/profile-pic.jpg)
 
-My name is Chavez. I’m an freelance and amateur website designer and developer originally from Hong Kong, currently based in Norfolk, United Kingdom, with over five years of experience building websites. I enjoy taking an idea from an early sketch to a finished, responsive site, and I’m always looking for ways to improve my design and development skills.
+My name is Chavez. I’m a freelance website designer and developer from Hong Kong, now based in Norfolk, United Kingdom. I have over five years of experience building websites, and I enjoy taking an idea from an early sketch through to a finished, responsive site. Each project gives me a chance to solve a new problem, learn something useful, and keep improving my design and development skills.
 
-I care about thoughtful layouts, accessible experiences, and the small details that help a website feel polished. Whether I’m exploring a new idea or refining an existing site, I aim to make the result clear, useful, and enjoyable to use.
+I care about thoughtful layouts, accessible experiences, and the small details that make a website feel polished. Good design should do more than look appealing: it should help people find what they need and make each page easy to use. Whether I’m shaping a new idea or refining an existing site, I aim to create something clear, useful, and enjoyable across different devices.
 
-I build websites with HTML, CSS, TailwindCSS, JavaScript and TypeScript, and work with frameworks and content platforms including Next.js, Hugo, and WordPress. I choose the tools that best fit each project, whether that means creating a custom site or making it easy to manage and update.
+I build websites with HTML, CSS, Tailwind CSS, JavaScript, and TypeScript. I also work with frameworks and content platforms such as Next.js, Hugo, WordPress, and e-commerce services. I choose tools to suit each project, whether it calls for a custom-built experience or a site that is straightforward to manage and update. I enjoy finding a practical balance between how a site looks, how it works, and what its owner needs from it.
 
-Aside from my website developing work, I'm also a freelance writer and social media content creator, which I aimed to drawn to the stories, people, and sacred traditions of the Catholic Church. I also work with [EWTN Great Britain](https://ewtn.co.uk/) as Production Assistant, which I involved in filming, editing and interviewing at the Catholic events across the United Kingdom, and supporting the media coverage and the communication of Catholic stories and events.
+Alongside my website work, I’m a freelance writer and social media content creator. I’m drawn to the stories, people, and sacred traditions of the Catholic Church, and I enjoy helping share them with a wider audience. I also work as a Production Assistant with [EWTN Great Britain](https://ewtn.co.uk/), filming, editing, and conducting interviews at Catholic events across the United Kingdom. My work supports the coverage of these events and helps communicate the stories behind them.
 
-Feel free to [get in touch](mailto:poonlhchavez@gmail.com) with me if you’d like to talk about a website design project.
+If you have a website project in mind or would like to discuss an idea, feel free to [get in touch](mailto:poonlhchavez@gmail.com). I’d be glad to hear what you’re working on.
