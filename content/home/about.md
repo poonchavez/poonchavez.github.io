@@ -1,6 +1,6 @@
 ---
 title: About
-image: "/images/profile-pic.jpg"
+image: "https://poonchavez.github.io/images/profile-pic.jpg"
 weight: 5
 ---
 
