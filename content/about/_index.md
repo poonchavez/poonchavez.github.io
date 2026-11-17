@@ -12,7 +12,7 @@ I care about thoughtful layouts, accessible experiences, and the small details t
 
 I build websites with HTML, CSS, Tailwind CSS, JavaScript, and TypeScript. I also work with frameworks and content platforms such as Next.js, Hugo, WordPress, and e-commerce services. I choose tools to suit each project, whether it calls for a custom-built experience or a site that is straightforward to manage and update. I enjoy finding a practical balance between how a site looks, how it works, and what its owner needs from it.
 
-Alongside my website designing work, I’m a freelance writer and social media content creator. I’m drawn to the stories, people, and sacred traditions of the Catholic Church, and I enjoy helping share them with a wider audience. I also work as a Production Assistant with [EWTN Great Britain](https://ewtn.co.uk/), filming, editing, and conducting interviews at Catholic events across the United Kingdom. My work supports the coverage of these events and helps communicate the stories behind them.
+Alongside my website designing and developing work, I’m a freelance writer and social media content creator. I’m drawn to the stories, people, and sacred traditions of the Catholic Church, and I enjoy helping share them with a wider audience. I also work as a Production Assistant with [EWTN Great Britain](https://ewtn.co.uk/), I've been involving in filming, editing, and conducting interviews at the Catholic events across the United Kingdom. My work supports the coverage of these events and helps communicate the stories behind them.
 
 You can also visit my [main personal website](https://www.chavezpoon.com) for my media projects and other writing works!
 
