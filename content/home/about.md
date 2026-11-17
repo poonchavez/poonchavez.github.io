@@ -4,6 +4,8 @@ image: "/images/profile-pic.jpg"
 weight: 5
 ---
 
-I’m Chavez Poon, a freelance website designer and developer based in the United Kingdom, with over five years of experience building websites. I enjoy shaping ideas into clear, responsive sites, with thoughtful layouts and accessible experiences. I use Tailwind CSS to build and style interfaces, and work with tools and platforms such as Next.js, Hugo, and WordPress to suit each project.
+Hi there! My name is Chavez Poon, I'm a freelance website designer and developer originally from Hong Kong currently based in the United Kingdom.
+
+With over five years of experience in building websites, I enjoy shaping ideas into clear, responsive sites, with thoughtful layouts and accessible experiences. I mainly use JavaScript and TypeScript to build and style interfaces, and work with tools and other platforms such as Next.js, Hugo, and WordPress to suit each project.
 
 [Learn more about me](/about/)
