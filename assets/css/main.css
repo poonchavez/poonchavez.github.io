@@ -9,3 +9,42 @@
 .navbar-menu {
   background-color: transparent;
 }
+
+/* Floating dot background */
+body {
+  background-image: none;
+  animation: none;
+}
+
+body::before {
+  inset: -32px 0;
+  opacity: 0.62;
+  background-image:
+    radial-gradient(circle, rgba(110, 110, 110, 0.28) 2px, transparent 2.8px),
+    radial-gradient(circle, rgba(110, 110, 110, 0.2) 1.7px, transparent 2.5px),
+    radial-gradient(circle, rgba(110, 110, 110, 0.15) 1.5px, transparent 2.3px);
+  background-size: 120px 120px, 205px 205px, 320px 320px;
+  background-position: 0 0, 35px 60px, 90px 25px;
+  animation: floating-dots 16s ease-in-out infinite alternate;
+}
+
+body::after {
+  display: none;
+}
+
+@keyframes floating-dots {
+  from {
+    background-position: 0 0, 35px 60px, 90px 25px;
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    background-position: 15px -72px, 75px -30px, 35px -90px;
+    transform: translate3d(0, -12px, 0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body::before {
+    animation: none;
+  }
+}
