@@ -28,6 +28,6 @@ home:
   showLatest: true
   showAllPosts: false
   numberOfProjectsToShow: 3
-  localTime: false
+  localTime: true
 projects:
-  useTwoColumns: false
+  useTwoColumns: true
