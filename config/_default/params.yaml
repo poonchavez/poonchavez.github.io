@@ -32,4 +32,4 @@ home:
   timeZone: Europe/London
   timeFormat: en-GB
 projects:
-  useTwoColumns: false
+  useTwoColumns: true
