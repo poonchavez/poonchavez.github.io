@@ -29,5 +29,7 @@ home:
   showAllPosts: false
   numberOfProjectsToShow: 3
   localTime: true
+  timeZone: Europe/London
+  timeFormat: en-GB
 projects:
-  useTwoColumns: true
+  useTwoColumns: false
