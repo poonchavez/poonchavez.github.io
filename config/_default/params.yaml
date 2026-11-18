@@ -23,6 +23,10 @@ social:
     icon: linkedin
     icon_pack: fab
     html_attributes: 'target="_blank" rel="noopener noreferrer"'
+  - url: "https://x.com/chavezpoon"
+    icon: twitter
+    icon_pack: fab
+    html_attributes: 'target="_blank" rel="noopener noreferrer"'
 home:
   introHeight: fullheight
   showLatest: true
