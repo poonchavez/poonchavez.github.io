@@ -4,8 +4,6 @@ layout: about
 summary: A little about me and my approach to website design and development.
 ---
 
-![Chavez](/images/profile-pic.jpg)
-
 As mentioned above in the homepage, my name is Chavez Poon. I’m a freelance website designer and developer from Hong Kong, now based in United Kingdom. I have over five years of experience building websites, and I enjoy taking an idea from an early sketch through to a finished, responsive site. Each project gives me a chance to solve a new problem, learn something useful, and keep improving my design and development skills.
 
 I care about thoughtful layouts, accessible experiences, and the small details that make a website feel polished. Good design should do more than look appealing: it should help people find what they need and make each page easy to use. Whether I’m shaping a new idea or refining an existing site, I aim to create something clear, useful, and enjoyable across different devices.
