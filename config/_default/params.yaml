@@ -40,3 +40,15 @@ projects:
 share:
   twitter: true
   facebook: true
+giscus:
+  repo: "poonchavez/poonchavez.github.io"
+  repo_id: "R_kgDOIwj-Rw"
+  category: ""
+  category_id: ""
+  mapping: pathname
+  strict: "0"
+  reactions_enabled: "1"
+  emit_metadata: "0"
+  theme: preferred_color_scheme
+  input_position: bottom
+  lang: en
