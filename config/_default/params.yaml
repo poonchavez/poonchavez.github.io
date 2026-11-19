@@ -37,3 +37,6 @@ home:
   timeFormat: en-GB
 projects:
   useTwoColumns: false
+share:
+  twitter: true
+  facebook: true
