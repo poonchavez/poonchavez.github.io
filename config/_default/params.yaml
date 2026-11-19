@@ -40,13 +40,3 @@ projects:
 share:
   twitter: true
   facebook: true
-giscus:
-  repo = "poonchavez/giscus"
-  repo-id = "1464498510"
-  category = "Comments"
-  category-id = "enter-category-id"
-  mapping = "pathname"
-  reactions-enabled = "1"
-  emit-metadata = "0"
-  theme = "light"
-  lang = "en"
