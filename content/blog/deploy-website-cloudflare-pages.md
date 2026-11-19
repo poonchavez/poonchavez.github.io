@@ -1,14 +1,15 @@
 ---
-title: "Deploy your website to Cloudflare Pages"
+title: "Deploy a Hugo or Next.js website to Cloudflare Pages"
 date: 2026-11-19
 showDate: true
 draft: false
 tags: ["Cloudfare Page"]
 series: ["development"]
 toc: true
+openLinksInNewTab: true
 ---
 
-Cloudflare Pages can build and host a website directly from a GitHub repository. Once the repository is connected, each push to your production branch can trigger a new build and deployment. You also get preview deployments for other branches, which are handy for checking a change before it goes live.
+This guide explains how to deploy a **Hugo website** to Cloudflare Pages, and includes a separate section for **Next.js static sites**. In both cases, Cloudflare Pages builds and hosts the site from a GitHub or GitLab repository. Once connected, pushes to your production branch can trigger a new deployment, and other branches can get preview deployments.
 
 Some of you might know that my [main personal homepage](https://www.chavezpoon.com) is also deployed to Cloudflare Pages. Here’s how to set up a site of your own.
 
@@ -16,7 +17,7 @@ Some of you might know that my [main personal homepage](https://www.chavezpoon.c
 
 Make sure your website builds on your computer and that its source code is pushed to GitHub or GitLab. You’ll need to be able to authorize Cloudflare to access the repository.
 
-The build command and output directory depend on your website’s framework. This guide uses Hugo. If you use another framework, check Cloudflare’s [build configuration guide](https://developers.cloudflare.com/pages/configuration/build-configuration/) for its settings.
+The build command and output directory depend on your website’s framework. The Hugo and Next.js instructions below use different settings, so follow the section for your project.
 
 ## Connect your repository
 
@@ -59,3 +60,27 @@ To use a custom domain, open your Pages project and go to **Custom domains → S
 For an apex domain such as `example.com`, the domain must be a Cloudflare zone on the account that owns the Pages project. A subdomain such as `www.example.com` can use a CNAME record pointing to the project’s `*.pages.dev` hostname. Add the domain through the Pages dashboard first; creating a DNS record alone does not finish the Pages domain setup. See Cloudflare’s [custom domains guide](https://developers.cloudflare.com/pages/configuration/custom-domains/) for details.
 
 Once the custom domain is active, visit it over HTTPS and check that it serves the latest production deployment. From then on, publishing a site update is as simple as committing and pushing your changes to Git.
+
+## Deploy a Next.js static site
+
+Cloudflare Pages can host a Next.js site that exports to static HTML. This is a good fit for sites that can be generated as files at build time. It does not run a Next.js server, so features that require server rendering or a running server—such as API routes—need a different setup.
+
+First, enable static export in your existing Next.js configuration. For an ESM config file such as `next.config.mjs`, add `output: 'export'` while keeping any settings you already have:
+
+```js
+const nextConfig = {
+  output: 'export',
+};
+
+export default nextConfig;
+```
+
+Next.js writes the exported site to the `out` directory when you run `next build`. Connect your repository to Pages using the same **Workers & Pages → Create application → Pages → Connect to Git** steps above. In build settings, select **Next.js (Static HTML Export)** or enter:
+
+| Setting | Value |
+| --- | --- |
+| Production branch | `main` (or your production branch) |
+| Build command | `npx next build` |
+| Build output directory | `out` |
+
+Save and deploy, then check the generated `*.pages.dev` URL. Cloudflare’s [Next.js static site guide](https://developers.cloudflare.com/pages/framework-guides/nextjs/deploy-a-static-nextjs-site/) has the current setup details. If your Next.js project needs server-side rendering or other full-stack features, Cloudflare currently recommends deploying it to Workers with [vinext](https://developers.cloudflare.com/pages/framework-guides/nextjs/) instead of using the static Pages export.

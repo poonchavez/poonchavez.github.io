@@ -5,6 +5,10 @@ defaultContentLanguageInSubdir: false
 title: "Chavez Poon — Freelance Website Designer & Developer"
 theme: introduction
 
+services:
+  disqus:
+    shortname: chavez-poon
+
 hasCJKLanguage: true
 enableEmoji: true
 permalinks:
