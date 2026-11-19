@@ -52,6 +52,6 @@ Then, go to your remote server, run `git pull`, and try to execute the script. T
 
 Similarly, if you later want to remove the executable permission from the file, run this command, then commit and push the change:
 
-```
+```sh
 git update-index --chmod=-x script.sh
 ```
