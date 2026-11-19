@@ -5,6 +5,7 @@ showDate: true
 draft: false
 tags: ["Cloudfare Page"]
 series: ["development"]
+toc: true
 ---
 
 Cloudflare Pages can build and host a website directly from a GitHub repository. Once the repository is connected, each push to your production branch can trigger a new build and deployment. You also get preview deployments for other branches, which are handy for checking a change before it goes live.
