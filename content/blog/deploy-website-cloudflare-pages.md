@@ -53,6 +53,18 @@ After a successful deployment, Cloudflare gives the project a `*.pages.dev` addr
 
 With Git integration enabled, pushing a change to the production branch starts a production deployment. Pushes to other branches can create preview deployments with their own URLs, so you can review changes before merging them.
 
+## Deploy from VS Code with Wrangler
+
+You can also upload a built site from VS Code’s integrated terminal with Cloudflare’s Wrangler CLI. Open the Command Palette with **Ctrl+Shift+P** on Windows/Linux or **Cmd+Shift+P** on macOS, choose **Terminal: Create New Terminal**, then sign in once with `npx wrangler login`. Build the site and deploy its output directory:
+
+```sh
+# Hugo
+hugo --minify
+npx wrangler pages deploy public --project-name=my-site
+```
+
+Replace `my-site` with your Cloudflare Pages project name. For the Next.js static export below, run `npx next build` and deploy `out` instead of `public`. Wrangler uploads the prebuilt files to Pages; see Cloudflare’s [Wrangler Direct Upload guide](https://developers.cloudflare.com/pages/get-started/direct-upload/) for project setup and preview deployments.
+
 ## Add your own domain
 
 To use a custom domain, open your Pages project and go to **Custom domains → Set up a domain**. Enter the domain and follow the DNS instructions shown in the dashboard.
