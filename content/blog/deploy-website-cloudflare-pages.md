@@ -3,7 +3,7 @@ title: "Deploy a Hugo or Next.js website to Cloudflare Pages"
 date: 2026-11-19
 showDate: true
 draft: false
-tags: ["Cloudfare Page"]
+tags: ["Cloudfare Page", "VS Code", "Wrangler"]
 series: ["development"]
 toc: true
 openLinksInNewTab: true
