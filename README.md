@@ -1,6 +1,6 @@
-# Chavez Poon — Portfolio
+# Chavez Poon's Personal Portfolio Website
 
-A Markdown-powered portfolio built with Hugo Extended and the Introduction theme.
+A Markdown-powered portfolio website built with Hugo Extended and the Introduction theme.
 
 ## Run locally
 
