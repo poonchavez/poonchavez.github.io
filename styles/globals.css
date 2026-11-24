@@ -1,0 +1,211 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::view-transition-group(hackathon-image),
+::view-transition-old(hackathon-image),
+::view-transition-new(hackathon-image) {
+  animation-duration: 600ms;
+  animation-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@keyframes hackathon-image-grow {
+  from {
+    opacity: 0.75;
+    transform: scale(0.3333);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes hackathon-image-shrink {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+  to {
+    opacity: 0.65;
+    transform: scale(0.3333);
+  }
+}
+
+@keyframes hackathon-caption-enter {
+  from {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes hackathon-switch-out {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+  to {
+    opacity: 0.55;
+    transform: scale(0.985);
+  }
+}
+
+@keyframes hackathon-switch-in {
+  from {
+    opacity: 0.55;
+    transform: scale(0.985);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes hackathon-caption-switch-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes hackathon-caption-switch-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.55;
+  }
+}
+
+.hackathon-image-opening {
+  animation: hackathon-image-grow 600ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.hackathon-image-closing {
+  animation: hackathon-image-shrink 450ms cubic-bezier(0.64, 0, 0.78, 0) both;
+}
+
+.hackathon-caption-opening {
+  animation: hackathon-caption-enter 300ms 220ms ease-out both;
+}
+
+.hackathon-caption-closing {
+  animation: hackathon-caption-enter 200ms ease-in reverse both;
+}
+
+.hackathon-caption-switch-out {
+  animation: hackathon-caption-switch-out 160ms ease-out both;
+}
+
+.hackathon-image-switch-out {
+  animation: hackathon-switch-out 160ms ease-out both;
+}
+
+.hackathon-image-switch-in {
+  animation: hackathon-switch-in 600ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.hackathon-caption-switch-in {
+  animation: hackathon-caption-switch-in 320ms cubic-bezier(0.4, 0, 0.2, 1) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-group(hackathon-image),
+  ::view-transition-old(hackathon-image),
+  ::view-transition-new(hackathon-image) {
+    animation-duration: 1ms;
+  }
+
+  .hackathon-image-opening,
+  .hackathon-image-closing,
+  .hackathon-caption-opening,
+  .hackathon-caption-closing,
+  .hackathon-image-switch-out,
+  .hackathon-caption-switch-out,
+  .hackathon-image-switch-in,
+  .hackathon-caption-switch-in {
+    animation-duration: 1ms;
+    animation-delay: 0ms;
+  }
+}
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+@layer base {
+  h1 {
+    @apply text-4xl font-bold;
+  }
+  h2 {
+    @apply text-3xl font-semibold;
+  }
+  h3 {
+    @apply text-xl font-semibold;
+  }
+  ul > li {
+    @apply list-disc list-inside;
+  }
+  ol > li {
+    @apply list-decimal list-inside;
+  }
+  .highlight:hover {
+    @apply text-indigo-600 dark:text-indigo-400 transition-colors ease-in-out duration-200;
+  }
+  .bg-hover {
+    @apply hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors ease-in-out duration-200;
+  }
+  .project-hover {
+    @apply group-hover:bg-gray-100 dark:group-hover:bg-[#172033] transition-colors ease-in-out duration-200;
+  }
+  .link-muted {
+    @apply underline underline-offset-2 text-inherit decoration-current hover:text-gray-700 dark:hover:text-gray-300 hover:decoration-gray-700 dark:hover:decoration-gray-300 transition-colors;
+  }
+}
+
+.post-content h2 {
+  @apply mt-10 mb-4;
+}
+
+.post-content h3 {
+  @apply mt-8 mb-4;
+}
+
+.post-content p, .post-content ul, .post-content ol {
+  @apply mb-4;
+}
+
+.post-content blockquote {
+  @apply border-l-2 border-indigo-600 dark:border-indigo-400 pl-4 pb-2 pt-1;
+}
+
+.post-content blockquote p:last-child {
+  @apply mb-0;
+}
+
+.post-content a, .underline-highlight {
+  @apply underline underline-offset-2 decoration-indigo-600 dark:decoration-indigo-400;
+}
+
+.post-content a:hover, .underline-highlight:hover {
+  @apply text-indigo-600 dark:text-indigo-400 transition-colors ease-in-out duration-200;
+}
+
+.post-content ul {
+  margin-top: -15px;
+}

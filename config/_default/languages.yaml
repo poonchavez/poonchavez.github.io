@@ -1,9 +1,0 @@
-en:
-  label: English
-  locale: en-GB
-  contentDir: content
-  weight: 1
-  title: "Chavez Poon — Freelance Website Designer & Developer"
-  params:
-    locale: en-GB
-    description: "A portfolio of website design and development work by Chavez Poon."
