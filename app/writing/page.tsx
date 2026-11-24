@@ -2,10 +2,14 @@ import PostPreview from "@/components/Post/PostPreview";
 import MailingListForm from "@/components/Writing/MailingListForm";
 import getPostMetaData from "@/lib/posts/getPostMetadata";
 import { Metadata } from "next";
+import getPageContent from "@/lib/pages/getPageContent";
+import MarkdownContent from "@/components/MarkdownContent";
+
+const page = getPageContent("writing");
 
 export const metadata: Metadata = {
-    title: "Writing - Ching Lam Lau",
-    description: "A collection of my writing",
+    title: `${page.title} - Ching Lam Lau`,
+    description: page.description,
 };
 
 const WritingPage = () => {
@@ -13,7 +17,7 @@ const WritingPage = () => {
 
     return (
         <div className="my-20 mx-auto max-w-2xl p-4 space-y-16">
-            <h2>Writing</h2>
+            <div><h2>{page.title}</h2><MarkdownContent content={page.content} /></div>
             <div className="space-y-3">
                 {postMetadata.map((post) => (
                     <PostPreview key={post.slug} {...post} />

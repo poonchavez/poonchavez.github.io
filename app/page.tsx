@@ -7,25 +7,20 @@ import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import getPageContent from "@/lib/pages/getPageContent";
+import MarkdownContent from "@/components/MarkdownContent";
 
 const HomePage = () => {
+    const page = getPageContent("home");
     const postMetadata = getPostMetaData().slice(0, 3);
     const topProjects = projects.slice(0, 3);
 
     return (
         <div className="mt-20 mb-6 mx-auto max-w-4xl p-4">
             <div className="pb-12">
-                <h2 className="font-semibold">Ching Lam Lau</h2>
-                <div className="mt-6 space-y-4 text-[16px] leading-relaxed">
-                    <p>
-                        I’m interested in full-stack and AI engineering to build products that help people learn and think better. Currently studying CS @ UWaterloo.
-                    </p>
-                    <p>
-                        I’ve been to 13 <Link href="/hackathons" className="link-muted">hackathons</Link>, organized 3 <Link href="/writing/hack-the-north" className="link-muted">hackathons</Link>, and previously did <Link href="/writing/cp-journey" className="link-muted">programming contests</Link>.
-                    </p>
-                    <p>
-                        In my free time, I run (<s>trying to hit 10k</s> recently ran a <Link href="/writing/running-a-half" className="link-muted">half!</Link>), climb, read books, <Link href="/writing" className="link-muted">write</Link>, and take <Link href="/photos" className="link-muted">photos</Link>. I also used to <Link href="https://dribbble.com/MiniCube11" target="_blank" rel="noopener noreferrer" className="link-muted">design</Link> and <Link href="https://scratch.mit.edu/users/MiniCube11/" target="_blank" rel="noopener noreferrer" className="link-muted">make games</Link>.
-                    </p>
+                <h2 className="font-semibold">{page.title}</h2>
+                <div className="mt-6 text-[16px] leading-relaxed">
+                    <MarkdownContent content={page.content} />
                 </div>
                 <div className="mt-8 flex flex-wrap gap-x-4 gap-y-1">
                     <Link href="https://github.com/MiniCube11" target="_blank" rel="noopener noreferrer" className="link-muted" title="GitHub" aria-label="GitHub">

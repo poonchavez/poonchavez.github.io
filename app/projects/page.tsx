@@ -1,16 +1,20 @@
 import Project from "@/components/Project/Project";
 import { projects } from "@/data/projects";
 import { Metadata } from "next";
+import getPageContent from "@/lib/pages/getPageContent";
+import MarkdownContent from "@/components/MarkdownContent";
+
+const page = getPageContent("projects");
 
 export const metadata: Metadata = {
-    title: "Projects - Ching Lam Lau",
-    description: "A collection of my personal projects",
+    title: `${page.title} - Ching Lam Lau`,
+    description: page.description,
 };
 
 const Projects = () => {
     return (
         <div className="my-20 mx-auto max-w-2xl p-4 space-y-16">
-            <h2>Projects</h2>
+            <div className="mb-8"><h2>{page.title}</h2><MarkdownContent content={page.content} /></div>
             {projects.map(project =>
                 <Project
                     key={project.id}
