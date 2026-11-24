@@ -12,6 +12,8 @@ export const generateStaticParams = async () => {
     }))
 }
 
+export const dynamicParams = false;
+
 export async function generateMetadata(
     { params }: { params: { slug: string } }
 ): Promise<Metadata> {
@@ -22,8 +24,8 @@ export async function generateMetadata(
     };
 }
 
-const PostPage = (props: any) => {
-    const slug = props.params.slug;
+const PostPage = ({ params }: { params: { slug: string } }) => {
+    const slug = params.slug;
     const post = getPostContent(slug);
     const date = timestampToDate({ timestamp: post.data.date, includeDay: true });
 
