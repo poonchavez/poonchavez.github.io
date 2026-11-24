@@ -2,13 +2,10 @@
 
 import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
-import Image from "next/image";
 import Link from "next/link";
 
 import SidebarLink from "./SidebarLink";
 import DarkModeIcon from "./DarkModeIcon";
-import SignatureLight from "../../public/images/signaturelight.svg";
-import SignatureDark from "../../public/images/signaturedark.svg";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
@@ -32,8 +29,7 @@ const Sidebar = () => {
             <div onClick={hideNav} className={`${navOpen ? 'block' : 'hidden'} fixed inset-0 z-40 h-screen w-screen bg-gray-300 dark:bg-gray-700 lg:hidden`}></div>
             <div className={`fixed left-0 top-0 z-50 space-y-2 py-2 ${navOpen && 'h-screen'} bg-white dark:bg-gray-900 ${!navOpen && 'backdrop-filter backdrop-blur-lg bg-opacity-40 dark:bg-opacity-40'} lg:backdrop-blur-none lg:border-r dark:lg:border-gray-700`}>
                 <Link href={"/"} className={`hidden lg:block mb-4 h-[52px] ${!expanded && 'invisible w-0'}`}>
-                    <Image src={SignatureLight} alt="Ching Lam Lau" className="p-3 w-36 dark:hidden" />
-                    <Image src={SignatureDark} alt="Ching Lam Lau" className="p-3 w-36 hidden dark:inline" />
+                    <span className="block whitespace-nowrap p-3 font-semibold text-gray-800 dark:text-gray-200">Chavez Poon</span>
                 </Link>
                 <div className={`${!navOpen && 'w-screen'} bg-opacity-0 lg:hidden`}>
                     <span className={`block p-3 w-12 h-12 mx-2 text-center rounded-md text-gray-500 ${navOpen && 'bg-gray-100 dark:bg-gray-800'}`} onClick={toggleNavOpen}>

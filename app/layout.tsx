@@ -7,8 +7,8 @@ import Footer from "@/components/Footer";
 import { GoogleAnalytics } from "@next/third-parties/google";
 
 export const metadata: Metadata = {
-  title: "Ching Lam Lau",
-  description: "Personal website and writing by Ching Lam Lau.",
+  title: "Chavez Poon",
+  description: "Personal website and writing by Chavez Poon.",
   icons: { icon: "/favicon.ico" },
 };
 

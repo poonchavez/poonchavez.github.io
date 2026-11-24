@@ -19,7 +19,7 @@ export async function generateMetadata(
 ): Promise<Metadata> {
     const post = getPostContent(params.slug);
     return {
-        title: `${post.data.title} - Ching Lam Lau`,
+        title: `${post.data.title} - Chavez Poon`,
         description: post.data.description || "",
     };
 }
@@ -32,7 +32,7 @@ const PostPage = ({ params }: { params: { slug: string } }) => {
     return (
         <div className="my-20 mx-auto max-w-2xl p-4">
             <h1 className="mb-6">{post.data.title}</h1>
-            <p className="text-gray-700 mb-14 dark:text-gray-400">{date}<span className="ml-8">Ching Lam Lau</span></p>
+            <p className="text-gray-700 mb-14 dark:text-gray-400">{date}<span className="ml-8">Chavez Poon</span></p>
             <div className="post-content mb-20">
                 <Markdown>{post.content}</Markdown>
             </div>
