@@ -7,7 +7,13 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 const Project = ({ name = "", id = "", description = "", image = "", technologies = new Array(), link = "", github = "", learnMore = "" }) => {
     return (
         <div id={id} className="scroll-mt-4 group">
-            <Image src={"/images/projects/" + image} alt="Project image" width={1000} height={1000} className="rounded-t-lg"/>
+            {image ? (
+                <Image src={"/images/projects/" + image} alt={name} width={1000} height={1000} className="rounded-t-lg"/>
+            ) : (
+                <div className="flex aspect-[4/3] items-center justify-center rounded-t-lg bg-gray-100 p-8 text-center dark:bg-gray-800">
+                    <span className="text-2xl font-semibold">{name}</span>
+                </div>
+            )}
             <div className="pt-6 px-5 pb-5 rounded-b-lg border-2 border-gray-300 border-t-0 dark:border-gray-800 project-hover w-full">
                 <div className="flex items-center">
                     <h3 className="mr-6 mb-1">{name}</h3>
