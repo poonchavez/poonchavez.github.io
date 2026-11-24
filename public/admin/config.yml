@@ -3,6 +3,11 @@ backend:
   turbo_site_id: YOUR_DECAP_TURBO_SITE_ID
   branch: main
 
+# Register this CMS URL in the Decap Turbo dashboard under Admin interface URLs.
+# https://www.chavezpoon.com/admin/
+site_url: https://www.chavezpoon.com
+display_url: https://www.chavezpoon.com
+
 media_folder: public/images/uploads
 public_folder: /images/uploads
 publish_mode: editorial_workflow
