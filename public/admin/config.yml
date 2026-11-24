@@ -1,6 +1,6 @@
 backend:
   name: turbo-github
-  turbo_site_id: YOUR_DECAP_TURBO_SITE_ID
+  turbo_site_id: ced92965-1f9b-446b-bd7c-777a15e3b9b3
   branch: main
 
 # Register this CMS URL in the Decap Turbo dashboard under Admin interface URLs.
