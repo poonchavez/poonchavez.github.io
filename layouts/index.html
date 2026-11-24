@@ -10,10 +10,7 @@
   </head>
   <body class="portfolio-home">
     {{ with .Site.GetPage "/home" }}
-    <header class="site-header">
-      <a class="site-mark" href="#top" aria-label="Chavez Poon, home">CP<span>.</span></a>
-      {{ partial "nav.html" $ }}
-    </header>
+    {{ partial "site-sidebar.html" $ }}
     <main>
       <section class="intro-hero" id="top">
         <div class="intro-copy">

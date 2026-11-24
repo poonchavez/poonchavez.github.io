@@ -1,0 +1,13 @@
+<script>
+  (() => {
+    const root = document.documentElement;
+    const buttons = document.querySelectorAll('.theme-toggle');
+    const saved = localStorage.getItem('portfolio-theme');
+    if (saved) root.dataset.theme = saved;
+    buttons.forEach((button) => button.addEventListener('click', () => {
+        const current = root.dataset.theme || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        root.dataset.theme = current === 'dark' ? 'light' : 'dark';
+        localStorage.setItem('portfolio-theme', root.dataset.theme);
+    }));
+  })();
+</script>

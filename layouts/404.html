@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language.Locale }}">
+  <head>
+    {{ partial "head/metadata.html" . }}
+    {{ partial "head/openGraph.html" . }}
+    {{ partial "head/favicons.html" . }}
+    {{ partial "head/css.html" . }}
+  </head>
+  <body class="portfolio-page">
+    {{ partial "site-sidebar.html" . }}
+    <main class="page-main">
+      <section class="page-shell">
+        <header class="page-heading"><div class="container"><h1 class="bold-title is-1">{{ i18n "404_title" . }}</h1></div></header>
+        <div class="page-content">
+          <div class="container markdown top-pad">{{ i18n "404_description" . | markdownify }}</div>
+          {{ partial "footer/text.html" . }}
+        </div>
+      </section>
+    </main>
+    {{ partial "footer/scripts.html" . }}
+    {{ partial "theme-toggle.html" . }}
+  </body>
+</html>
