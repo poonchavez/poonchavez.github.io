@@ -1,0 +1,78 @@
+backend:
+  name: turbo-github
+  turbo_site_id: YOUR_DECAP_TURBO_SITE_ID
+  branch: main
+
+media_folder: public/images/uploads
+public_folder: /images/uploads
+publish_mode: editorial_workflow
+
+collections:
+  - name: pages
+    label: Pages
+    files:
+      - name: home
+        label: Home page
+        file: content/pages/home.md
+        fields:
+          - { label: Page title, name: title, widget: string }
+          - { label: Description, name: description, widget: text }
+          - { label: Page content, name: body, widget: markdown }
+      - name: projects
+        label: Projects page
+        file: content/pages/projects.md
+        fields:
+          - { label: Page title, name: title, widget: string }
+          - { label: Description, name: description, widget: text }
+          - { label: Page content, name: body, widget: markdown }
+      - name: writing
+        label: Writing page
+        file: content/pages/writing.md
+        fields:
+          - { label: Page title, name: title, widget: string }
+          - { label: Description, name: description, widget: text }
+          - { label: Page content, name: body, widget: markdown }
+      - name: photos
+        label: Photos page
+        file: content/pages/photos.md
+        fields:
+          - { label: Page title, name: title, widget: string }
+          - { label: Description, name: description, widget: text }
+          - { label: Page content, name: body, widget: markdown }
+      - name: not_found
+        label: 404 page
+        file: content/pages/not-found.md
+        fields:
+          - { label: Page title, name: title, widget: string }
+          - { label: Description, name: description, widget: text }
+          - { label: Page content, name: body, widget: markdown }
+  - name: projects
+    label: Projects
+    folder: content/projects
+    create: true
+    slug: "{{slug}}"
+    extension: md
+    format: frontmatter
+    fields:
+      - { label: Name, name: name, widget: string }
+      - { label: ID, name: id, widget: string }
+      - { label: Description, name: description, widget: text }
+      - { label: Main image filename, name: image, widget: string, required: false }
+      - { label: Preview image filename, name: imageSmall, widget: string, required: false }
+      - { label: Technologies, name: technologies, widget: list, required: false }
+      - { label: Project website, name: link, widget: string, required: false }
+      - { label: Source code, name: github, widget: string, required: false }
+      - { label: Related article, name: learnMore, widget: string, required: false }
+      - { label: Body, name: body, widget: markdown, required: false }
+  - name: writing
+    label: Writing
+    folder: posts
+    create: true
+    slug: "{{slug}}"
+    extension: md
+    format: frontmatter
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: Description, name: description, widget: text }
+      - { label: Publication date, name: date, widget: datetime, time_format: false, format: "YYYY-MM-DD" }
+      - { label: Article, name: body, widget: markdown }

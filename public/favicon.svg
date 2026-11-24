@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <style>
+    .tile { fill: #e7efe9; }
+    .letters { fill: #202821; }
+    @media (prefers-color-scheme: dark) {
+      .tile { fill: #202821; }
+      .letters { fill: #f2f1e8; }
+    }
+  </style>
+  <rect class="tile" x="2" y="2" width="60" height="60" rx="17" />
+  <text class="letters" x="32" y="42" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" letter-spacing="-3">CP</text>
+</svg>

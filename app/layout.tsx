@@ -9,7 +9,7 @@ import { GoogleAnalytics } from "@next/third-parties/google";
 export const metadata: Metadata = {
   title: "Chavez Poon",
   description: "Personal website and writing by Chavez Poon.",
-  icons: { icon: "/favicon.ico" },
+  icons: { icon: "/favicon.svg", shortcut: "/favicon.svg" },
 };
 
 export default function RootLayout({

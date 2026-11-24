@@ -1,7 +1,7 @@
 import SectionHeading from "@/components/Home/SectionHeading";
 import PostPreviewCard from "@/components/Post/PostPreviewCard";
 import ProjectPreview from "@/components/Project/ProjectPreview";
-import { projects } from "@/data/projects";
+import { getProjects } from "@/data/projects";
 import getPostMetaData from "@/lib/posts/getPostMetadata";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -13,7 +13,7 @@ import MarkdownContent from "@/components/MarkdownContent";
 const HomePage = () => {
     const page = getPageContent("home");
     const postMetadata = getPostMetaData().slice(0, 3);
-    const topProjects = projects.slice(0, 3);
+    const topProjects = getProjects().slice(0, 3);
 
     return (
         <div className="mt-20 mb-6 mx-auto max-w-4xl p-4">

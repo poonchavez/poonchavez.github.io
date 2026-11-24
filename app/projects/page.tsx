@@ -1,5 +1,5 @@
-import Project from "@/components/Project/Project";
-import { projects } from "@/data/projects";
+import ProjectList from "@/components/Project/ProjectList";
+import { getProjects } from "@/data/projects";
 import { Metadata } from "next";
 import getPageContent from "@/lib/pages/getPageContent";
 import MarkdownContent from "@/components/MarkdownContent";
@@ -15,19 +15,7 @@ const Projects = () => {
     return (
         <div className="my-20 mx-auto max-w-2xl p-4 space-y-16">
             <div className="mb-8"><h2>{page.title}</h2><MarkdownContent content={page.content} /></div>
-            {projects.map(project =>
-                <Project
-                    key={project.id}
-                    name={project.name}
-                    id={project.id}
-                    description={project.description}
-                    image={project.image}
-                    technologies={project.technologies}
-                    link={project.link}
-                    github={project.github}
-                    learnMore={project.learnMore}
-                />
-            )}
+            <ProjectList projects={getProjects()} />
         </div>
     )
 };
