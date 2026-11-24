@@ -1,6 +1,5 @@
 ---
 title: About
-image: "/images/profile-pic.jpg"
 weight: 5
 ---
 

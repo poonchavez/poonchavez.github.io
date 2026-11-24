@@ -1,5 +1,5 @@
 ---
-title: "Chavez L. H. Poon"
+title: "Chavez Poon"
 description: "An amateur website designer and developer with over five years of experience building websites."
 headless: true
 ---
