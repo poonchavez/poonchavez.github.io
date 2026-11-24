@@ -23,13 +23,13 @@ const HomePage = () => {
                     <MarkdownContent content={page.content} />
                 </div>
                 <div className="mt-8 flex flex-wrap gap-x-4 gap-y-1">
-                    <Link href="https://github.com/MiniCube11" target="_blank" rel="noopener noreferrer" className="link-muted" title="GitHub" aria-label="GitHub">
+                    <Link href="https://github.com/poonchavez" target="_blank" rel="noopener noreferrer" className="link-muted" title="GitHub" aria-label="GitHub">
                         <FontAwesomeIcon icon={faGithub} className="w-5 text-lg" />
                     </Link>
-                    <Link href="https://www.linkedin.com/in/ching-lam-lau/" target="_blank" rel="noopener noreferrer" className="link-muted" title="LinkedIn" aria-label="LinkedIn">
+                    <Link href="https://www.linkedin.com/in/poonlonghei/" target="_blank" rel="noopener noreferrer" className="link-muted" title="LinkedIn" aria-label="LinkedIn">
                         <FontAwesomeIcon icon={faLinkedin} className="w-5 text-lg" />
                     </Link>
-                    <a href="mailto:contact.minicube11@gmail.com" className="link-muted" title="Email" aria-label="Email">
+                    <a href="mailto:poonlhchavez@gmail.com" className="link-muted" title="Email" aria-label="Email">
                         <FontAwesomeIcon icon={faEnvelope} className="w-5 text-lg" />
                     </a>
                 </div>

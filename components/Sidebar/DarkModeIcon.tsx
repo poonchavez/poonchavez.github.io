@@ -24,7 +24,7 @@ const DarkModeIcon = ({ expanded = false }) => {
         <>
             <span
             onClick={toggleTheme}
-            className={`cursor-pointer block ${!expanded && 'lg:hidden'} p-3 w-32 h-12 mx-2 rounded-md text-gray-500 bg-hover`}
+            className={`cursor-pointer block ${!expanded && 'lg:hidden'} p-3 w-32 lg:w-48 h-12 mx-2 rounded-md text-gray-500 bg-hover`}
             onMouseOver={() => setHovered(true)}
             onMouseOut={() => setHovered(false)}
             >

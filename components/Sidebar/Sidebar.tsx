@@ -27,7 +27,7 @@ const Sidebar = () => {
     return (
         <>
             <div onClick={hideNav} className={`${navOpen ? 'block' : 'hidden'} fixed inset-0 z-40 h-screen w-screen bg-gray-300 dark:bg-gray-700 lg:hidden`}></div>
-            <div className={`fixed left-0 top-0 z-50 space-y-2 py-2 ${navOpen && 'h-screen'} bg-white dark:bg-gray-900 ${!navOpen && 'backdrop-filter backdrop-blur-lg bg-opacity-40 dark:bg-opacity-40'} lg:backdrop-blur-none lg:border-r dark:lg:border-gray-700`}>
+            <div className={`fixed left-0 top-0 z-50 space-y-2 py-2 ${navOpen && 'h-screen'} bg-white dark:bg-gray-900 ${!navOpen && 'backdrop-filter backdrop-blur-lg bg-opacity-40 dark:bg-opacity-40'} lg:h-screen lg:py-4 lg:transition-[width] lg:duration-200 lg:backdrop-blur-none lg:border-r dark:lg:border-gray-700 ${expanded ? 'lg:w-56' : 'lg:w-16'}`}>
                 <Link href={"/"} className={`hidden lg:block mb-4 h-[52px] ${!expanded && 'invisible w-0'}`}>
                     <span className="block whitespace-nowrap p-3 font-semibold text-gray-800 dark:text-gray-200">Chavez Poon</span>
                 </Link>
@@ -40,8 +40,8 @@ const Sidebar = () => {
                     <SidebarLink slug="" expanded={expanded} />
                     <SidebarLink slug="projects" expanded={expanded} />
                     <SidebarLink slug="writing" expanded={expanded} />
-                    <SidebarLink slug="github" externalLink="https://github.com/MiniCube11" expanded={expanded} />
-                    <SidebarLink slug="email" externalLink="mailto:contact.minicube11@gmail.com" expanded={expanded} />
+                    <SidebarLink slug="github" externalLink="https://github.com/poonchavez" expanded={expanded} />
+                    <SidebarLink slug="email" externalLink="mailto:poonlhchavez@gmail.com" expanded={expanded} />
                     <DarkModeIcon expanded={expanded} />
                     <SidebarToggle toggleSidebar={toggleSidebar}/>
                 </div>

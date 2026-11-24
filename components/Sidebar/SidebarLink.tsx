@@ -22,7 +22,7 @@ const SidebarLink = ({ slug = "", externalLink = "", expanded = false }) => {
             {/* Mobile */}
             <Link
                 href={link}
-                className={`block ${!expanded && 'lg:hidden'} p-3 w-32 h-12 mx-2 rounded-md ${selected ? 'bg-gray-200 dark:bg-gray-700' : 'bg-hover'}`}
+                className={`block ${!expanded && 'lg:hidden'} p-3 w-32 lg:w-48 h-12 mx-2 rounded-md ${selected ? 'bg-gray-200 dark:bg-gray-700' : 'bg-hover'}`}
                 onMouseOver={() => setHovered(true)}
                 onMouseOut={() => setHovered(false)}
             >
