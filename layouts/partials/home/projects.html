@@ -1,0 +1,19 @@
+{{ $projects := .Pages.ByDate.Reverse }}
+<section class="section" id="{{ .Title | urlize }}">
+  <div class="container">
+    <div class="section-heading"><p class="eyebrow">Selected work</p><h2 class="title is-2">{{ .Title | markdownify }}</h2></div>
+    <div class="columns is-multiline">
+      {{ range $index, $project := first 3 $projects }}
+        {{ $width := "302x" }}{{ $columnWidth := "is-one-third" }}
+        {{ if .Site.Params.projects.useTwoColumns }}{{ $columnWidth = "is-half" }}{{ $width = "490x" }}{{ end }}
+        <div class="column {{ $columnWidth }}"><article class="card"{{ if not $project.Params.external_link }} data-target="#project-{{ $index }}"{{ end }}>
+          {{ with $project.Resources.ByType "image" }}<div class="card-image"><figure class="image is-3by2">
+            {{ range first 1 (sort . "Params.weight") }}{{ $image := .Resize $width }}<a href="{{ $project.Params.external_link | default $project.Permalink }}"{{ if not $project.Params.external_link }} aria-haspopup="dialog" aria-controls="project-{{ $index }}"{{ end }}><img class="card-thumbnail" src="{{ $image.Permalink }}" alt="{{ $image.Name }}"></a>{{ end }}
+          </figure></div>{{ end }}
+          <div class="card-content"><h3><a href="{{ $project.Params.external_link | default $project.Permalink }}"{{ if not $project.Params.external_link }} aria-haspopup="dialog" aria-controls="project-{{ $index }}"{{ end }}>{{ $project.Title | markdownify }}</a></h3>{{ with $project.Params.project_timeframe }}<p class="fa-xs">{{ . }}</p>{{ end }}</div>
+        </article></div>
+      {{ end }}
+    </div>
+    <p class="section-more"><a href="{{ .Permalink }}">All projects <span aria-hidden="true">↗</span></a></p>
+  </div>
+</section>

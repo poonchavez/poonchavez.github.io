@@ -268,9 +268,12 @@ body { padding-left: 244px; }
 .intro-hero { max-width: 1080px; min-height: min(690px, 100vh); }
 .section { margin: 0 auto; max-width: 1080px; }
 .section.content-section:nth-of-type(even) { background: transparent; }
-.content-section .container, #projects > .container, #blog > .container { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 38px; }
+.content-section .container, #projects > .container, #blog > .container { background: transparent; border: 0; border-radius: 0; padding: 0; }
 .content-section .container { max-width: 1000px; }
 #projects .container, #blog .container { max-width: 1000px; }
+.section-more { margin-top: 22px; }
+.section-more a { color: var(--ink); font-size: .86rem; font-weight: 600; }
+.section-more a span { color: var(--muted); margin-left: 5px; }
 .contact-section { margin: 30px auto; max-width: 1000px; border: 1px solid var(--line); border-radius: 12px; }
 .site-header .navbar-burger { display: none; }
 
