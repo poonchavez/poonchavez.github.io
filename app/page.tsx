@@ -16,7 +16,7 @@ const HomePage = () => {
     const topProjects = getProjects().slice(0, 3);
 
     return (
-        <div className="mt-20 mb-6 mx-auto max-w-4xl p-4">
+        <div className="page-enter mt-20 mb-6 mx-auto max-w-4xl p-4">
             <div className="pb-12">
                 <h2 className="font-semibold">{page.title}</h2>
                 <div className="mt-6 text-[16px] leading-relaxed">

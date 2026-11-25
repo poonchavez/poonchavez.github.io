@@ -16,7 +16,7 @@ const WritingPage = () => {
     const postMetadata = getPostMetaData();
 
     return (
-        <div className="my-20 mx-auto max-w-2xl p-4 space-y-16">
+        <div className="page-enter my-20 mx-auto max-w-2xl p-4 space-y-16">
             <div><h2>{page.title}</h2><MarkdownContent content={page.content} /></div>
             <div className="space-y-3">
                 {postMetadata.map((post) => (

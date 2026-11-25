@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 
 const Projects = () => {
     return (
-        <div className="my-20 mx-auto max-w-2xl p-4 space-y-16">
+        <div className="page-enter my-20 mx-auto max-w-2xl p-4 space-y-16">
             <div className="mb-8"><h2>{page.title}</h2><MarkdownContent content={page.content} /></div>
             <ProjectList projects={getProjects()} />
         </div>

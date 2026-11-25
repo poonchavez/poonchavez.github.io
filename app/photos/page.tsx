@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 
 const PhotosPage = () => {
     return (
-        <div className="w-full lg:px-48">
+        <div className="page-enter w-full lg:px-48">
             <div className="my-20 mx-auto max-w-7xl p-4 w-full space-y-16">
                 <div><h2>{page.title}</h2><MarkdownContent content={page.content} /></div>
                 <PhotoGallery photos={photos} />

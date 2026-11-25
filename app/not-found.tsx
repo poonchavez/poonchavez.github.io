@@ -4,7 +4,7 @@ import MarkdownContent from "@/components/MarkdownContent";
 export default function NotFound() {
     const page = getPageContent("not-found");
     return (
-        <div className="my-32 mx-auto max-w-2xl p-4 text-center">
+        <div className="page-enter my-32 mx-auto max-w-2xl p-4 text-center">
             <h1 className="text-8xl mb-8">404</h1>
             <h2 className="mb-8 font-semibold">{page.title}</h2>
             <MarkdownContent content={page.content} />
